@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Pedido</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <a href="index.html"><li>Inicio</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href=""><li>Administrador</li></a>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="pedido">   
+        <form action="pedido2.php" method="post">
+            Nombre del cliente:
+            <input type="text" name="nombre_c" placeholder="Yahir Guzman" required>
+            <br>
+            Fecha:
+            <input type="date" name="fecha" id="" required>
+            <br>
+            Tipo de bebida:
+            <select name="tipo_bebidas" id="">
+                <option value="Cafe Americano">Cafe Americano</option>
+                <option value="Chocolate Mexicano">Chocolate Mexicano</option>
+                <option value="Cafe de Calabaza">Cafe de Calabaza</option>
+                <option value="Mocca">Mocca</option>
+                <option value="Machiatto">Machiatto</option>
+            </select>
+            <br>
+            Precio:
+            <select name="precio_b" id="">
+                <option value="35">$35</option>
+                <option value="47">$47</option>
+                <option value="55">$55</option>
+                <option value="45">$45</option>
+                <option value="35">$35</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar pedido">
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
